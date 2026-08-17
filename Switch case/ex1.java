@@ -70,9 +70,14 @@ public class ex1{
                     result5=result5*(i-1);
 
                 }
-                System.out.print("The factorial is:"+result5);
+                System.out.println("The factorial is:"+result5);
 
-                for(int i=num;i>1;)
+                for(int i=1;i<=num;i++){
+                    if(num%i==0){
+                        System.out.println(i);
+                    }
+                   
+                }
 
           
 
