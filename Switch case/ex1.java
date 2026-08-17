@@ -21,7 +21,7 @@ public class ex1{
                     num=num/10;
                     cnt++;
                 }
-                System.out.println("Total number is"+cnt);
+                System.out.println("Total number is "+cnt);
                 break;
 
             case 2:
@@ -78,6 +78,10 @@ public class ex1{
                     }
                    
                 }
+                default:
+                    System.out.println("Invalid input");
+                    break;
+
 
           
 
