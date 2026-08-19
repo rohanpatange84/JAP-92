@@ -1,10 +1,13 @@
+/*Find the power of any number using a for loop*/
+
 import java.util.Scanner;
 public class PowerFind{
 
     static int findPower(int num,int pow){
-        int power=num;
-        for(int i=pow;i<=1;i--){
-            power=power*i;
+        int power=1;
+        for(int i=pow;i>=1;i--){
+            power=power*num;
+            
         }
         return power;
     }
