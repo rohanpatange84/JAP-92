@@ -1,4 +1,4 @@
-
+/*Write a  Java  program to print all Prime numbers between 1 to n.*/
 
 import java.util.Scanner;
 public class PrimeNum{
