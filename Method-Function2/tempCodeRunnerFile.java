@@ -1,1 +1,1 @@
-        // return power;
+ return n1;
