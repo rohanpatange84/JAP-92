@@ -5,18 +5,13 @@
 import java.util.Scanner;
 public class PerfectNumbers{
 
-    static void perfect(int num){
+    static boolean perfect(int num){
         int sum=0;
         for(int i=1;i<num;i++){
-            if(num%i==0){
-                sum=sum+i;
-            }
+            if(num%i==0)
+            sum=sum+i;
         }
-        if(num==sum){
-            System.out.println("Perfect Numbers");
-        }
-        else
-        System.out.println("Not Perfect Numbers");
+        return sum==num;
         
     }
 
@@ -26,7 +21,12 @@ public class PerfectNumbers{
         System.out.print("Enter number: ");
         num = sc.nextInt();
 
-        perfect(num);
+        boolean result = perfect(num);
+
+        if(result)
+        System.out.println("Perfect number");
+        else
+        System.out.println("Not Perfect number");
 
     }
 }

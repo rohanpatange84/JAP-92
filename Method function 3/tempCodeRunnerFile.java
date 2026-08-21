@@ -1,11 +1,5 @@
-int sum=0;
-        for(int i=1;i<num;i++){
-            if(num%i==0){
-                sum=sum+i;
-            }
+ for(int i=2;i<num;i++){
+            if(num%i==0) return false;
+          
         }
-        if(num==sum){
-            System.out.println("Perfect Numbers");
-        }
-        else
-        System.out.println("Not Perfect Numbers");
+         return true;

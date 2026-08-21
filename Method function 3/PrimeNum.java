@@ -21,7 +21,11 @@ public class PrimeNum{
         num= sc.nextInt();
 
         boolean result=isPrime(num);
-        System.out.println(result);
+
+        if(result)
+        System.out.println("Prime Number");
+        else
+        System.out.println("Not Prime Number");
         
     }
 }
