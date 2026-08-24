@@ -7,7 +7,7 @@ class Account{
     boolean bankstatus;
 
     void accountType(){
-        System.out.println("The account is:"+type);
+      System.out.println("The account is:"+type);
     }
     void depositeMoney(){
        
