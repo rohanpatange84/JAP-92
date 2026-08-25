@@ -77,4 +77,26 @@ public class NumberOpe{
 			return false;
 	}
 
+	//Print all factors of a given number
+	public void printFactors(){
+		System.out.println("The factors of number is:");
+		System.out.println("______________________");
+		for(int i=1;i<=num/2;i++){
+			if(num%i==0)
+				System.out.print(i+",");
+		}
+		System.out.println();
+		System.out.println("______________________");
+		
+	}
+
+	//Calculate the factorial of a number
+	public int findFactorial(){
+		int mul=1;
+		for(int i=1;i<=num;i++){
+			mul=mul*i;
+		}
+		return mul;
+	}
+
 }

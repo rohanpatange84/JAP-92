@@ -24,5 +24,11 @@ public class App{
 			System.out.println("Number is Palindrome");
 		else 
 			System.out.println("number is not palindrome");
+
+
+		n1.printFactors();
+
+		System.out.println("Factorial of number is  : "+n1.findFactorial());
+
 	}
 }
