@@ -1,5 +1,6 @@
 public class NumberOpe{
 	int num;
+	boolean status; 
 
 
 	// Count the number of digits in any number
