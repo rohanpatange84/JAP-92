@@ -49,7 +49,7 @@ public class App{
 			System.out.println("Enter a new name :");
 			newname=sc.nextLine();
 			a1.changeName(newname);
-			
+			System.out.println("Name Change Succesfully");
 			break;
 
 
@@ -58,6 +58,7 @@ public class App{
 			System.out.println("Enter a new DOP :");
 			newdop=sc.nextLine();
 			a1.changeDop(newdop);
+			System.out.println("DOP Change Succesfully");
 			break;
 
 
