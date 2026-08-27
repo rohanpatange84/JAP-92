@@ -1,22 +1,23 @@
 class Student{
 	private String name;
-	private int rollno;
-	static String collage="BNCOE";
+	private static int rollno;
+	
 
-	public Student(){
 
-	}
 
-	public Student(String name,int rollno){
+	public Student(String name){
+		rollno++;
 		this.name=name;
-		this.rollno=rollno;
+		
+	
 
 	}
+
 
 	public void getDetail(){
 		System.out.println("Name: "+name);
 		System.out.println("Roll No: "+rollno);
-		System.out.println("Name: "+collage);
+		
 
 	}
 
@@ -28,13 +29,21 @@ class Student{
 public class Demo{
 	public static void main(String[] args) {
 
-		Student s1=new Student();
-		s1.collage="zp";
+		
+
+		Student s1=new Student("Tushr");
 		s1.getDetail();
 
-
-		Student	s2=new Student("Suraj",20);
+		Student	s2=new Student("Suraj");
 		s2.getDetail();
+
+		Student s3=new Student("x");
+		s3.getDetail();
+
+		Student	s4=new Student("y");
+		s4.getDetail();
+
+		
 		
 	}
 }
