@@ -2,6 +2,8 @@ public class Rectangle{
 	private float length;
 	private float width;
 
+
+	//constructor
 	public Rectangle(){
 		length=1.0f;
 		width=1.0f;
@@ -13,21 +15,15 @@ public class Rectangle{
 
 	}
 
+
+
+	//getter
 	public float getLength(){
 		return length;
 	}
 
-	public void setLength(float length){
-		this.length=length;
-	}
-
 	public float gitWidth(){
 		return width;
-	}
-
-	public void setWidth(float width){
-		this.width=width;
-
 	}
 
 	public double getArea(){
@@ -42,5 +38,14 @@ public class Rectangle{
 
 
 
+	//setter
+	public void setWidth(float width){
+		this.width=width;
 
+	}
+	public void setLength(float length){
+		this.length=length;
+	}
+
+	
 }
