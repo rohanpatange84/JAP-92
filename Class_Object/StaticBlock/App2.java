@@ -55,11 +55,6 @@ class Mobile{
 
 	}
 
-
-
-
-
-
 }
 
 
@@ -67,6 +62,24 @@ class Mobile{
 
 public class App2{
 	public static void main(String[] args) {
+
+		Mobile m = new Mobile();
+		Mobile m1= new Mobile("6gb","128gb","white",1600);
+		Mobile m2= new Mobile("8gb","128gb","green",17000);
+		Mobile m3= new Mobile("8gb","256gb","green",18000);
+
+		m.getMobile();
+
+		System.out.println("-----------------------");
 		
+		m1.getMobile();
+
+		System.out.println("-----------------------");
+		
+		m2.getMobile();
+
+		System.out.println("-----------------------");
+		
+		m3.getMobile();
 	}
 }
