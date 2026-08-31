@@ -10,16 +10,16 @@ Backward: 50 40 30 20 10
 */
 
 public class ex1{
-
+	//print form starting
 	public static void getForward(int arr[]){
 		System.out.print("Forward:");
 		for(int i=0;i<arr.length;i++){
 
 			System.out.print(arr[i]+" ");
 		}
-
 	}
 
+	//print from ending
 	public static void getBackword(int arr[]){
 		System.out.print("Backword:");
 		for(int i=arr.length-1;i>=0;i--){
@@ -27,6 +27,7 @@ public class ex1{
 
 	}
 }
+
 	public static void main(String[] args) {
 
 		int arr[]=new int[]{10,20,30,40,50};
@@ -34,9 +35,5 @@ public class ex1{
 		System.out.println();
 		getBackword(arr);
 		
-
-		}
-
-
-		
+		}	
 	}

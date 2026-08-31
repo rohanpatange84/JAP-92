@@ -1,11 +1,22 @@
-public class ex4{
+/*
+Array Case 4: Sum of Odd Elements
+ 
+From a given array, calculate the sum of all odd elements only.
+ 
+Example Input:
+Array = [11, 22, 33, 44, 55]
+ 
+Expected Output:
+Odd elements = 11, 33, 55
+Sum = 99
+*/
 
+public class ex4{
 	public static void printOddElement(int arr[]){
 		System.out.print("Odd element:");
 		for(int i=0;i<arr.length;i++){
 			if(arr[i]%2!=0)
 				System.out.print(" "+arr[i]);
-
 		}
 			System.out.println();
 	}
