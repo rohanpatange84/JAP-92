@@ -15,22 +15,18 @@ public class ex11{
 
 	public static void shiftElement(int arr[]){
 		for(int i=0;i<arr.length;i++){
-			if(i==arr.length-1) break;
-			if(i==0)
-				arr[arr.length-1]=arr[i];
+			if (i==4) break;
 			arr[i]=arr[i+1];
 		}
-
-		for(int i=0;i<arr.length;i++){
-			System.out.println(arr[i]);
-		}
-
-
 	}
 	public static void main(String[] args) {
 		int arr[]=new int[]{1,2,3,4,5};
 
 		shiftElement(arr);
+
+		for(int i=0;i<arr.length;i++){
+			System.out.print(" "+arr[i]);
+		}
 
 		
 	}
