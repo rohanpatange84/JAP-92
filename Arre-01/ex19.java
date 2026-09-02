@@ -34,7 +34,7 @@ public  class ex19{
 			int first=getFirstDigit(arr[i]);
 			int last=getLastDigit(arr[i]);
 			int newnum=first*10+last;
-			System.out.print(" "+newnum);
+			System.out.print(""+newnum);
 		}
 	}
 

@@ -16,6 +16,7 @@ public class ex11{
 	public static void shiftElement(int arr[]){
 		for(int i=0;i<arr.length;i++){
 			if (i==4) break;
+			
 			arr[i]=arr[i+1];
 		}
 	}

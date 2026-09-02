@@ -16,10 +16,7 @@ class Students{
 		rollno=1;
 
 	}
-
-
-
-
+	
 	//constructor
 	Students(String name,int rollno){
 		System.out.println("Constructor insitializer");
@@ -62,18 +59,7 @@ class Students{
 		college="BNCOE";
 		fees=96500;
 	}
-
-
-	
-
-
-
-
 }
-
-
-
-
 public class App1{
 	public static void main(String[] args) {
 		Students s2=new Students("Rohan",57);
