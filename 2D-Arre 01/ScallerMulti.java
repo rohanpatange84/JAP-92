@@ -1,4 +1,4 @@
-
+//  Write a Java program to perform Scalar matrix multiplication.
 import java.util.Scanner;
 public class ScallerMulti{
 
