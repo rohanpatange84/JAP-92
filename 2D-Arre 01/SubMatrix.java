@@ -1,6 +1,6 @@
-//Write a Java program to add two matrices.
+//Write a Java program to subtract two matrices.
 import java.util.Scanner;
-public class AddMatrix{
+public class SubMatrix{
 	
 
 	public static void fillMatrix(int arr[][]){
@@ -27,7 +27,7 @@ public class AddMatrix{
 	public static void addMatrix(int arr[][],int brr[][],int crr[][]){
 		for(int i=0;i<arr.length;i++){
 			for(int j=0;j<arr[i].length;j++){
-				crr[i][j]=arr[i][j]+brr[i][j];
+				crr[i][j]=arr[i][j]-brr[i][j];
 			}
 
 		}
@@ -60,7 +60,7 @@ public class AddMatrix{
 		printMatrix(crr);
 
 		addMatrix(arr,brr,crr);
-		System.out.println("Matrix crr after adition");
+		System.out.println("Matrix crr after substarction");
 		printMatrix(crr);
 
 
