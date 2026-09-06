@@ -16,6 +16,7 @@ public class DoubleArre{
 		}
 		System.out.println();
 	}
+	
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		int size;
@@ -31,8 +32,6 @@ public class DoubleArre{
 
 		System.out.println("--------after fill----------");
 		printArre(marks);
-
-
 
 	}
 }
