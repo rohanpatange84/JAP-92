@@ -1,7 +1,7 @@
-public static Ex2{
+public class App{
 	public static void main(String[] args) {
 
-		int arr[][]
+		Student student
 		
 	}
 }
