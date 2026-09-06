@@ -24,6 +24,15 @@ public class Ex1{
 			System.out.println();
 		}
 
+		System.out.println("-----------------");
+
+		for(int a[]:arr){
+			for(int num :a){
+				System.out.print(num);
+			}
+			System.out.println();
+		}
+
 
 
 
