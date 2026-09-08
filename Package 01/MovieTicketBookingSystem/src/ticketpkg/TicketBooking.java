@@ -8,14 +8,17 @@ public class TicketBooking{
 	private String customerName;
 	private int numOfTicket;
 	private Movie m;
-	private int totalAmount=numOfTicket*m.getTicketPrice();
+	private int totalAmount;
 
 
-	public TicketBooking(String customerName,int numOfTicket){
+	public TicketBooking(String customerName,int numOfTicket,Movie m){
 		this.customerName=customerName;
 		this.numOfTicket=numOfTicket;
 		bookingID++;
 		customerID++;
+		this.m=m;
+
+		totalAmount=numOfTicket*m.getTicketPrice();
 	}
 
 	public int getNumOfTicket(){

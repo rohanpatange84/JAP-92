@@ -3,20 +3,13 @@ package moviepkg;
 import ticketpkg.TicketBooking;
 
 public class Movie{
-	private int movieID;
-	private String tital;
-	private String genre;
-	private int ticketPrice;
-	private int discount;
+	private int movieID=1;
+	private String tital="Dhurandhar";
+	private String genre="Action";
+	private int ticketPrice=400;
+	private int discount=100;
 
-	{
-		movieID=1;
-		tital="Dhurandhar";
-		genre="Action";
-		ticketPrice=400;
-		discount=100;
-	}
-
+	
 	// public int getTotalPrice(){
 	// 	return ticketPrice*TicketBooking.getNumOfTicket()+discount;
 
