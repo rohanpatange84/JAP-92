@@ -7,7 +7,8 @@ public class TicketBooking{
 	private static int customerID;
 	private String customerName;
 	private int numOfTicket;
-	private int totalAmount=numOfTicket*Movie.getTicketPrice();
+	private Movie m;
+	private int totalAmount=numOfTicket*m.getTicketPrice();
 
 
 	public TicketBooking(String customerName,int numOfTicket){
@@ -22,14 +23,14 @@ public class TicketBooking{
 	}
 
 	public int getTotalPrice(){
-		return numOfTicket*Movie.getTicketPrice()-Movie.getDiscount();
+		return numOfTicket*m.getTicketPrice()-m.getDiscount();
 
 	}
 
 	public void getBookingDetail(){
 		System.out.println("Customer ID : "+customerID);
 		System.out.println("Customer Name : "+customerName);
-		System.out.println("Movie Name : "+Movie.getTital());
+		System.out.println("Movie Name : "+m.getTital());
 		System.out.println("Number of Ticket : "+numOfTicket);
 		System.out.println("Total amount :"+totalAmount);
 
