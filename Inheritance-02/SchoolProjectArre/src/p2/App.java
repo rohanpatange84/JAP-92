@@ -1,3 +1,10 @@
+/*
+compile - javac -d bin src/p1/Person.java src/p1/Staff.java src/p1/Students.java src/p2/App.java
+
+run - java -cp bin p2.App
+*/
+
+
 package p2;
 import java.util.Scanner;
 import p1.Person;
