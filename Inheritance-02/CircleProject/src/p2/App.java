@@ -18,3 +18,12 @@ public class App{
 		
 	}
 }
+
+/*
+for compile code:
+"javac -d bin src/p1/Circle.java src/p1/Cylinder.java src/p2/App.java"
+
+run code 
+"java -cp bin p2.App"
+
+*/

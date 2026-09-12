@@ -25,6 +25,17 @@ public class App{
 		Students std[]=new Students[numOfStd];
 		Staff stf[]=new Staff[numOfStf];
 
+		System.out.println("----All students----");
+		for(int i=0;i<std.length;i++){
+			std[i].studentsInfo();
+			System.out.println();
+		}
+		System.out.println("----All Staff----");
+		for(int i=0;i<stf.length;i++){
+			stf[i].staffInfo();
+			System.out.println();
+		}
+
 
 		System.out.println("--------For Student--------");
 		for(int i=0;i<std.length;i++){
