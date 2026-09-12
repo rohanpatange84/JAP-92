@@ -28,6 +28,3 @@ public class Demo{
 	}
 }
 
-int num=20;
-
-res=(num==20)?:25;
