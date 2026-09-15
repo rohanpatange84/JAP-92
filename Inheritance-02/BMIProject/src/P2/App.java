@@ -17,6 +17,9 @@ public class App{
 		double height=sc.nextDouble();
 		BMI b1 = new BMI(name,age,weight,height);
 
-		b1.getStatus();
+		
+		String status=b1.getStatus();
+
+		System.out.println(status);
 	}
 }

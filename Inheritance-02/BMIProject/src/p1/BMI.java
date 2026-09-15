@@ -25,18 +25,22 @@ public class BMI{
 			return weight/(height*height)*703;
 	}
 
-	public void getStatus(){
+	public String getStatus(){
 
 		double bmi=getBMI();
+		String status;
+
 		if(bmi<18.5){
-			System.out.println("Underweight");
+			status="Underweight";
 		}else if(bmi>18.5&&bmi<24.9){
-			System.out.println("Normal Weight");
+			status="Normal Weight";
 		}else if(bmi>25.0&&bmi<29.9){
-			System.out.println("Overweight");
+			status="Overweight";
 		}else{
-			System.out.println("Obesity");
+			status="Obesity";
 		}
+
+		return status;
 
 	}
 
