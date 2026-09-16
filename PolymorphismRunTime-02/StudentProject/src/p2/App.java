@@ -46,5 +46,8 @@ public class App{
 		s1.getStudent();
 		System.out.println();
 		 sp1.getStudent();
+
+		 System.out.println(s1.getTotalMarks());
+		 System.out.println(sp1.getTotalMarks());
 	}
 }
