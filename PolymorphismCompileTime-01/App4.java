@@ -1,3 +1,9 @@
+/*
+
+can we overload static method ?
+Yes
+
+*/
 class A{
 
 	public static void doAdd(int x,int y){

@@ -13,6 +13,7 @@ public class Ticket extends Train{
 		this.coach=coach;
 		this.seatNum=seatNum;
 	}
+	
 
 	//
 	public String getCoach(){

@@ -40,7 +40,7 @@ public class SportStudent extends Student{
 	}
 
 	public double getAverage(){
-		int total=getSportMarks()+getTotalMarks();
+		double total=getTotalMarks();
 		double avg=total/super.getMarks().length;
 
 		return avg;

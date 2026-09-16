@@ -63,7 +63,7 @@ public class Student{
 	}
 	
 	public double getAverage(){
-		int total=getTotalMarks();
+		double total=getTotalMarks();
 		double avg=total/marks.length;
 
 		return avg;

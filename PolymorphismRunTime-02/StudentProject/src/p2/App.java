@@ -47,7 +47,10 @@ public class App{
 		System.out.println();
 		 sp1.getStudent();
 
-		 System.out.println(s1.getTotalMarks());
-		 System.out.println(sp1.getTotalMarks());
+		 System.out.println("Total marks: "+s1.getTotalMarks());
+		 System.out.println("Total marks: "+sp1.getTotalMarks());
+
+		 System.out.println("Average: "+s1.getAverage());
+		 System.out.println("Average: "+sp1.getAverage());
 	}
 }

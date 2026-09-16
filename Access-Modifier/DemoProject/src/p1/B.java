@@ -9,9 +9,9 @@ public class B{
 
 		// System.out.println(a1.pri);
 
-		System.out.println("default"+a1.defa);
-		System.out.println("protected"+a1.proc);
-		System.out.println("public"+a1.pub);
+		System.out.println("default "+a1.defa);
+		System.out.println("protected "+a1.proc);
+		System.out.println("public "+a1.pub);
 		
 		// a1.f1();
 
