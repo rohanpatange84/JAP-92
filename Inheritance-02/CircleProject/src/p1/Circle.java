@@ -42,4 +42,8 @@ public class Circle{
 		return area;
 
 	}
+
+	public String toString(){
+		return "Radius: "+radius+"  "+"Colour: "+colour;
+	}
 }

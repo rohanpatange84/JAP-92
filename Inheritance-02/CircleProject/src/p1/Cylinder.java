@@ -38,4 +38,8 @@ public class Cylinder extends Circle{
 
 	}
 
+	public String toString(){
+		return "Height: "+height+"  "+"Radius: "+getRadius()+"  "+"Colour: "+getColour();
+	}
+
 }

@@ -15,6 +15,11 @@ public class App{
 
 		System.out.println(area);
 		System.out.println(c1.getArea());
+
+
+		System.out.println(c1.toString());
+
+		System.out.println(cyl.toString());
 		
 	}
 }
