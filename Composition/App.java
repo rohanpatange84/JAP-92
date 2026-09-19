@@ -7,13 +7,18 @@ class Student{
 	{
 		name="ABC";
 		rollno=-1;
+		
 	}
 
 	public Student(){
 
-		Marks mark=new Marks();
-		
+			
 
+	}
+
+	public Student (String name,int rollno){
+		this.name=name;
+		this.rollno=rollno;
 	}
 
 	public Student(String name, int rollno,Marks mark){
@@ -35,11 +40,19 @@ class Student{
 		this.rollno=rollno;
 	}
 
+	public void setMarks(Marks mark){
+		this.mark=mark;
+	}
+
+	
+
 	//getter
 
 	public String getName(){ return name; }
 
 	public int getRollNo(){ return rollno; }
+
+	public Marks getMarks(){ return mark; }
 
 
 	public void showStudent(){
@@ -110,11 +123,22 @@ public class App{
 
 		Student s1 = new Student("Rohan",14,m1);
 
-		Student s2 = new Student(m1);
+		Marks m2 = new Marks(10,20,30);
+		Student s2 = new Student("Dinesh",57);
+		 s2.setMarks(m2);
+
+
+		s1.showStudent();
+
+		s1.mark.showMarks();
+
+		System.out.println("-------------------");
 
 		s2.showStudent();
 
 		s2.mark.showMarks();
+
+		System.out.println(s2.getMarks());
 
 
 		
