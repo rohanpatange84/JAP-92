@@ -3,7 +3,7 @@ public class CopyArre{
 	public static void copyArres(int arr[],int brr[]){
 
 		for(int i=0;i<arr.length;i++){
-			brr[i]=arr[i];
+			brr[i]=anrr[i];
 		}
 	}
 
