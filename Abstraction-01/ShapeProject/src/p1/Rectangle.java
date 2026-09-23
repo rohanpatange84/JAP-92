@@ -18,11 +18,7 @@ public class Rectangle extends Shape{
 		
 	}
 
-	public Rectangle(String colour,boolean filled){
-		super(colour,filled);
-		
-	}
-
+	
 
 	public double getWidth(){ return width; }
 
