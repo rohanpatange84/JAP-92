@@ -14,11 +14,11 @@ import p2.Square;
 
 public class App{
 	public static void main(String[] args) {
-		Shape s1 = new Circle(4.2);
+		Shape s1 = new Circle(4.2,"Red",true);
 
-		Shape s2 = new Rectangle(3.0,4.0);
+		Shape s2 = new Rectangle(3.0,4.0,"Black",false);
 
-		Rectangle r1 = new Square(6.2);
+		Rectangle r1 = new Square(6.2,"Blue",false);
 
 		System.out.println("Circle:"+s1.toString());
 		System.out.println("Area Of Circle: "+s1.getArea());

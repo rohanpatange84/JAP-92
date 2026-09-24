@@ -1,30 +1,27 @@
 package p1;
 
 public interface Shape{
-	String colour="Red";
-	boolean filled=true;
+	
 
 	
 
 	public String getColour();
-	// public void setColour();
-
-	
 
 	public boolean isFilled();
 
-	// public void setFilled();
+
+	public void setColour(String colour);
+
+	public void setFilled(boolean filled);
 
 
 
+	public  double getArea();
 
-
-	public abstract double getArea();
-
-	public abstract double getPerimeter();
+	public  double getPerimeter();
 
 	@Override
-	public abstract String toString();
+	public  String toString();
 
 
 

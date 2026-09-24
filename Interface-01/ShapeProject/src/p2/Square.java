@@ -12,11 +12,11 @@ public class Square extends Rectangle{
 		
 	}
 
-	// public Square(double side, String colour, boolean filled){
-	// 	super(side,side,colour,filled);
+	public Square(double side, String colour, boolean filled){
+		super(side,side,colour,filled);
 
 		
-	// }
+	}
 
 	public double getSide(){ return super.getWidth(); }
 

@@ -3,6 +3,9 @@ package p2;
 import p1.Shape;
 
 public class Rectangle implements Shape{
+	protected String colour="Red";
+	protected boolean filled=true;
+
 	protected double width = 1.0;
 	protected double length = 1.0;
 
@@ -13,13 +16,13 @@ public class Rectangle implements Shape{
 		this.length=length;
 	}
 
-	// public Rectangle(double width, double length, String colour,boolean filled){
-	// 	super.colour=colour;
-	// 	super.filled=filled;
-	// 	this.width=width;
-	// 	this.length=length;
+	public Rectangle(double width, double length, String colour,boolean filled){
+		this.colour=colour;
+		this.filled=filled;
+		this.width=width;
+		this.length=length;
 		
-	// }
+	}
 
 	
 
@@ -35,6 +38,17 @@ public class Rectangle implements Shape{
 		this.length=length;
 	}
 
+
+	@Override
+	public void setColour(String colour){
+		this.colour=colour;
+	}
+
+	@Override
+	public void setFilled(boolean filled){
+		this.filled=filled;
+
+	}
 
 	@Override
 	public String getColour(){ return colour;}
