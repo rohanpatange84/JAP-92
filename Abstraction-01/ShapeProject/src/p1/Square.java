@@ -1,8 +1,7 @@
 package p1;
 
 public class Square extends Rectangle{
-	protected double side=1.0;
-
+	
 	public Square(){}
 
 	public Square(double side){

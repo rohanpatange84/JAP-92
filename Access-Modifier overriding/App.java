@@ -1,7 +1,7 @@
 class A{
 
 	// private void f1(){
-	// 	System.out.println("Class A private");     // we can not override private method
+	// 	System.out. println("Class A private");     // we can not override private method
 	// }
 
 	void f2(){

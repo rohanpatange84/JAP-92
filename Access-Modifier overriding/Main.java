@@ -1,10 +1,15 @@
 class A{
+    int x=10;
     void f1(){
         System.out.println("Class A");
+    }
+    void f2(){
+        
     }
 }
 
 class B extends A{
+    int y=20;
     void f1(){
         System.out.println("Class B");
     }
