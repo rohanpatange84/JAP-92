@@ -2,7 +2,7 @@ package p2;
 
 
 
-import p1.Vehicle;
+
 
 public abstract class VehicleDetails{
 	private String brand;
