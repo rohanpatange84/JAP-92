@@ -14,7 +14,7 @@ public class Example07{
 
 			}
 
-			for(char n:namech){
+			 for(char n:namech){
 				System.out.print(n+"");
 			}
 
