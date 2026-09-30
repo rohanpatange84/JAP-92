@@ -27,6 +27,6 @@ public  static String removeFirstOccurance(String str,char ch){
 		String str = "Hello";
 		char ch='l';
 
-		System.out.println(removeFirstOccurance(str,ch));
+		System.out.println("Atter removing First Occurance: "+removeFirstOccurance(str,ch));
 	}
 }
