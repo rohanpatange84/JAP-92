@@ -2,7 +2,7 @@
 
 public	class	Example03{
 
-	public	static	int firstConcurrence(String	str, char ch){
+	public	static	int firstOccurrence(String	str, char ch){
 
 		int res=-1;
 
@@ -20,9 +20,9 @@ public	class	Example03{
 			String str="Hello Java";
 			char ch='a';
 
-			if(firstConcurrence(str,ch)==-1)
+			if(firstOccurrence(str,ch)==-1)
 				System.out.println("Invalid Character");
 			else
-			System.out.println("First Concurrence of "+ch+" At index: "+firstConcurrence(str,ch));
+			System.out.println("First occurrence of "+ch+" At index: "+firstOccurrence(str,ch));
 	}
 }	

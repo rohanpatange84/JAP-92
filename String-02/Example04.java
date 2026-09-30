@@ -3,7 +3,7 @@
 
 public class Example04{
 
-		public static int lastConcurrence(String str, char ch){
+		public static int lastOccurrence(String str, char ch){
 
 		int index=-1;
 
@@ -22,10 +22,10 @@ public class Example04{
 		String str="Hello Java";
 			char ch='a';
 
-			if(lastConcurrence(str,ch)==-1)
+			if(lastOccurrence(str,ch)==-1)
 				System.out.println("Invalid Character");
 			else
-			System.out.println("Last Concurrence of "+ch+" At index: "+lastConcurrence(str,ch));
+			System.out.println("Last occurrence of "+ch+" At index: "+lastOccurrence(str,ch));
 
 
 	}
