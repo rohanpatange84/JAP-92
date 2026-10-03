@@ -5,9 +5,26 @@ public class Example16{
 
 	public static int  firstConcurrenceWorld(String str, String s1){
 
-			 int index = str.indexOf(s1);
+		int ans;
 
-			 return index;
+			for(int i=0;i<str.length();i++){
+				if(str.charAt(i)==s1.charAt(i)){
+					for(int j=0;j<s1.length();j++){
+						boolean a=true;
+						if(str.charAt(i+(j*1))!=s1.charAt(i)){
+							a=false;
+
+						}else{
+							ans=i;
+							return ans;
+
+
+						}
+
+					}
+				}
+			}
+			return ans;
 
 		
 	

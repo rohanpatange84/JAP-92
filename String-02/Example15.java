@@ -11,7 +11,7 @@ public class Example15{
 			if(str.charAt(i)==present){
 				newStr=newStr+replace;
 			}else{
-			newStr=newStr+str.charAt(i);n
+			newStr=newStr+str.charAt(i);
 		}
 		}
 
