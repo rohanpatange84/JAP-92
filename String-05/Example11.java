@@ -10,7 +10,9 @@ Output: am developer hello i java
 public class Example11{
 	public static String sortLexicographically(String str){
 
-		String newStr[]=str.split(" ");
+		String str1 = str.replaceAll("\\s+", " ").trim();
+
+		String newStr[]=str1.split(" ");
 
 		for(int i=0;i<newStr.length;i++){
 			for(int j=0;j<newStr.length-1;j++){
