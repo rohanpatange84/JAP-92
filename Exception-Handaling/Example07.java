@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Example05{
+public class Example07{
 
 	public static void main(String[] args) {
 
@@ -20,9 +20,9 @@ public class Example05{
 		try{
 			System.out.println("in the try ::");
 
-			// int num=x/y;
+			int num=x/y;
 
-			// System.out.println(arr[num]);
+			System.out.println(arr[num]);
 
 
 			System.out.println(str1.charAt(10));
@@ -30,17 +30,9 @@ public class Example05{
 			System.out.println(str.length());
 
 
-		}catch(ArithmeticException e){
+		}catch(Exception e){
 			System.out.println("---> "+e);
 
-		}catch(ArrayIndexOutOfBoundsException e){
-			System.out.println("---> "+e);
-
-		}catch(NullPointerException e){
-			System.out.println("---> "+e);
-
-		}catch(StringIndexOutOfBoundsException e){
-			System.out.println("---> "+e);
 		}
 
 		System.out.println("Prgram end ::");
