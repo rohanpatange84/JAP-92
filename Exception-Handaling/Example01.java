@@ -1,0 +1,39 @@
+public class Example01{
+
+	public static void f1(){
+			System.out.println("f1 start");
+			f2();
+
+			System.out.println("f1 end");
+		}
+
+
+
+	public static void f2(){
+			System.out.println("f2 start");
+			f3();
+
+			System.out.println("f2 end");
+		}
+
+
+
+	public static void f3(){
+
+			System.out.println("f3 start");
+
+			System.out.println("f3 end");
+		}
+
+
+
+	public static void main(String[] args) {
+
+		System.out.println("Main Start :: ");
+
+		f1();
+
+		System.out.println("Main end ::");
+
+	}
+}
