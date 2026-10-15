@@ -8,7 +8,7 @@ class Work{
 	}
 
 }
-
+n
 class Harry extends Thread{
 
 	Work w1;
