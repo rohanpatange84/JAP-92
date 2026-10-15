@@ -29,8 +29,8 @@ class Example06{
 		
 		MyThread t1=new MyThread();
 
-		t1.run();
-		// t1.start(); // JVM 
+		//t1.run();
+		t1.start(); // JVM 
 
 		for(int i=1;i<=10;i++){
 			System.out.println(5*i + "  "+Thread.currentThread().getName());

@@ -2,17 +2,6 @@ public class Demo {
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
 
         int size=m+n;
-
-        // for(int i=0;i<nums1.length;i++){
-        //     if(nums1[i]==0)
-        //     size++;
-        // }
-
-        //  for(int i=0;i<nums2.length;i++){
-        //     if(nums2[i]==0)
-        //     size++;
-        // }
-
         int arr[]=new int[size];
 
         int k=0;
