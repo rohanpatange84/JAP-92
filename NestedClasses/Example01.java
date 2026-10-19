@@ -37,8 +37,16 @@ public class Example01{
 		System.out.println(in.innerField);
 		in.printInnerData();
 
-		System.out.println(in.outerfield);
+		// System.out.println(in.outerfield);
 		// in.printOuterData();
+
+		System.out.println("-------------------------------");
+
+
+		Outter.Inner in1 = new Outter().new Inner();
+
+		System.out.println(in1.innerField);
+		in1.printInnerData();
 		
 		
 
