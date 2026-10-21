@@ -12,6 +12,7 @@ class Outter{
 
 		public void printInnerData(){
 		System.out.println("Inner field "+innerField);
+		
 		}
 	}
 
