@@ -14,7 +14,9 @@ public class Example03{
 		int sum=0;
 
 		for(int i=0;i<str.length();i++){
-			sum+=str.charAt(i);
+			char ch = str.charAt(i);
+			int num=Character.getNumericValue(ch);
+			sum+=num;
 		}
 		System.out.println(sum);
 	}

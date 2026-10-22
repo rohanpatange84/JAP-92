@@ -1,4 +1,3 @@
-// invalid code
 
 
 class Harry extends Thread{

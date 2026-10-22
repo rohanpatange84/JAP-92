@@ -13,7 +13,7 @@ class Student implements Serializable{
 		mark=0;
 	}
 
-
+ // byte stream
 	public Student(int rollno, String name, int mark){
 		this.rollno=rollno;
 		this.name=name;

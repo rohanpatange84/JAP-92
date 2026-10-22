@@ -24,7 +24,7 @@ class Point implements Cloneable{
 
 
 public class Example02 {
-	public static void main(String[] args) throws CloneNotSupportedException{
+	public static void main(String[] args) {
 
 		Point p1 = new Point(11,22);
 		Point p2 =null;
@@ -37,5 +37,8 @@ public class Example02 {
 
 		System.out.println(p1);
 		System.out.println(p2);
+
+		System.out.println(p1.hashCode());
+		System.out.println(p2.hashCode());
 	}
 }
