@@ -18,7 +18,7 @@ public class Example06{
 	
 	System.out.println(num);
 
-	num.remove(Integer.valueOf(100));
+	num.remove(Integer.valueOf());
 
 	System.out.println(num);
 

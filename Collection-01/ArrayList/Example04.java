@@ -16,9 +16,23 @@ public class Example04{
 		Integer arr[]= new Integer[num.size()];
 		arr=num.toArray(arr);
 
+		intn brr[]=new int[num.size()];
+
+
 		for(int i=0;i<arr.length;i++){
 			System.out.print(arr[i]+" ");
+			//brr[i]=arr[i];
 		}
+
+		System.out.println();
+
+		for(int i=0;i<arr.length;i++){
+			System.out.print(brr[i]+" ");
+		}
+
+
+
+		
 		
 	}
 }
