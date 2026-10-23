@@ -29,11 +29,10 @@ public class Example02{
 		// }
 
 
-		// for(int i=0;i<num.size();i++){
-		// 	System.out.println(num.remove(i));
-		// }
+		for(int i=0;i<10;i++){
+			System.out.println(num.remove(i));
+		}
 
-			System.out.println(num.remove(5));
 
 			System.out.println("size "+num.size());
 
