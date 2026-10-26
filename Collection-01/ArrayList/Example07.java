@@ -32,7 +32,7 @@ public class Example07{
 		Student st[]=new Student[5];
 
 		for(int i=0;i<5;i++){
-			st[i]=new Student(i,"Suraj",70);n
+			st[i]=new Student(i,"Suraj",70);
 		}
 
 		System.out.println(st[1].toString());
