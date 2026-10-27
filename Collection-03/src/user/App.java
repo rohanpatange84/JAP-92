@@ -74,19 +74,34 @@ public class App {
 	}
 
 	public static void removeStudent(ArrayList<Student> list, int id) {
-		
-		Student s=null;
+
+		Student s = null;
 		for (int i = 0; i < list.size(); i++) {
 			Student s1 = list.get(i);
 			if (s1.getId() == id) {
-				s=list.get(i);
+				s = list.get(i);
 				list.remove(i);
 			}
 		}
-		
-		System.out.println("Student removed with ID: "+id);
+
+		System.out.println("Student removed with ID: " + id);
 		System.out.println(s);
-		
+
+	}
+
+	public static void updateStudent(ArrayList<Student> list, int id) {
+
+		for (int i = 0; i < list.size(); i++) {
+			Student s1 = list.get(i);
+			if (s1.getId() == id)
+				System.out.println("Enter id: ");
+			s1.setId(sc.nextInt());
+			System.out.println("Enter Name: ");
+			s1.setName(sc.next());
+			System.out.println("Enter Marks: ");
+			s1.setMarks(sc.nextDouble());
+			break;
+		}
 
 	}
 
@@ -129,12 +144,13 @@ public class App {
 
 		do {
 //			displayStudents(students);
-			
+
 			System.out.println("Enter 1 --- Add Student");
 			System.out.println("Enter 2 --- Remove Student");
 			System.out.println("Enter 3 --- Search student");
 			System.out.println("Enter 4 --- Display Students");
-			System.out.println("Enter 5 --- Exit");
+			System.out.println("Enter 5 --- Update Student");
+			System.out.println("Enter 6 --- Exit");
 //			
 			n = sc.nextInt();
 
@@ -154,12 +170,18 @@ public class App {
 				int id1 = sc.nextInt();
 				searchById(id1, students);
 				break;
-				
+
 			case 4:
 				displayStudents(students);
 				break;
-				
+
 			case 5:
+				System.out.println("Enter Id: ");
+				int id2 = sc.nextInt();
+				updateStudent(students,id2);
+				break;
+
+			case 6:
 				light = false;
 				break;
 
