@@ -8,7 +8,7 @@ public class App {
 	
 	private static Scanner sc = new Scanner(System.in);
 	
-	public static Student addStudent() {
+	public static void addStudent(ArrayList<Student> list) {
 		
 		System.out.println("Enter ID : ");
 		int id = sc.nextInt();
@@ -19,7 +19,8 @@ public class App {
 		System.out.println("Enter Marks : ");
 		double marks = sc.nextDouble();
 		
-		return new Student(id,name,marks);
+		Student std=new Student(id,name,marks);
+		list.add(std);
 	}
 	
 	public static  void displayStudents(ArrayList<Student> list) {
@@ -36,16 +37,24 @@ public class App {
 		
 	}
 	
-	public static Student searchById(int id,ArrayList<Student> list) {
-		
+	public static void searchById(int id,ArrayList<Student> list) {
+		boolean light=false;
 		for(int i=0;i<list.size();i++) {
 			Student s1= list.get(i);
-			if(s1.getId()==id)
-				return s1;
+			if(s1.getId()==id) {
+				light=true;
+				System.out.println("--------------------------------------------");
+				System.out.println("With ID: "+id+" Student present at index: "+i);
+				System.out.println(s1);
+				System.out.println("--------------------------------------------");
+				break;
+				}
 		}
-		
-		return null;
-		
+		if(light==false) {
+			System.out.println("--------------------------------------------");
+			System.out.println("Student not exist with ID: "+id);
+			System.out.println("--------------------------------------------");
+		}
 		
 	}
 	
@@ -77,25 +86,74 @@ public static void removeStudent(ArrayList<Student> list,int id){
 }
 	public static void main(String[] args) {
 		
+			Student s1 = new Student(101, "Rahul", 85.5);
+	        Student s2 = new Student(102, "Priya", 92.0);
+	        Student s3 = new Student(103, "Amit", 76.5);
+	        Student s4 = new Student(104, "Sneha", 88.0);
+	        Student s5 = new Student(105, "Rohan", 95.5);
+	        
+		
 		ArrayList<Student> students = new ArrayList<>();
+		boolean light=true;
 		
-		for(int i=1;i<=3;i++) {
-			students.add(addStudent());
-		}
+		students.add(s1);
+		students.add(s2);
+		students.add(s3);
+		students.add(s4);
+		students.add(s5);
 		
 		
-		displayStudents(students);
+//		
+//		for(int i=1;i<=3;i++) {
+//			students.add(addStudent());
+//		}
+//		
+		
+//		displayStudents(students);
+//		
+//		
+//		
+//		Student st = searchById(11,students);
+//		
+//		System.out.println(st);
+//		
+//		removeStudent(students,11);
+//		
+//		displayStudents(students);
+		
+		int n;
 		
 		
-		
-		Student st = searchById(11,students);
-		
-		System.out.println(st);
-		
-		removeStudent(students,11);
-		
-		displayStudents(students);
-		
+		do{
+			displayStudents(students);
+			System.out.println("Enter 1 --- Add Student");
+			System.out.println("Enter 2 --- Remove Student");
+			System.out.println("Enter 3 --- Search student");
+			System.out.println("Enter 4 --- Exit");
+//			
+			n=sc.nextInt();
+			
+			switch(n) {
+			case 1 : addStudent(students);
+				break;
+				
+			case 2 :
+				System.out.println("Enter id of the student:");
+				int id = sc.nextInt();
+				removeStudent(students,id);
+				break;
+				
+			case 3 :
+				System.out.println("Enter ID");
+				int id1 = sc.nextInt();
+				searchById(id1,students);
+				break;
+				
+			case 4 :light=false;
+				break;
+			}
+			
+		}while(light);	
 		
 		
 		
