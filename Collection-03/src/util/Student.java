@@ -3,11 +3,11 @@ package util;
 import java.util.Objects;
 
 public class Student {
-	
+
 	private int id;
 	private String name;
 	private double marks;
-	
+
 	public Student() {
 		// TODO Auto-generated constructor stub
 	}
@@ -63,9 +63,7 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return String.format("%-3d %-10s %-3f",id,name,marks);
+		return String.format("%-5d %-10s %-3f", id, name, marks);
 	}
-	
-	
 
 }
