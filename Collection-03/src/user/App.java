@@ -61,7 +61,7 @@ public class App {
 
 	}
 
-	public static Student searchById(String name, ArrayList<Student> list) {
+	public static Student searchByName(String name, ArrayList<Student> list) {
 
 		for (int i = 0; i < list.size(); i++) {
 			Student s1 = list.get(i);
@@ -178,7 +178,7 @@ public class App {
 			case 5:
 				System.out.println("Enter Id: ");
 				int id2 = sc.nextInt();
-				updateStudent(students,id2);
+				updateStudent(students, id2);
 				break;
 
 			case 6:
