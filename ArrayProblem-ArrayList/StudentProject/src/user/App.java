@@ -47,10 +47,10 @@ public class App {
 			Student s1 = list.get(i);
 			if(s1.getStudentId()==studentId) {
 				double marks[] = new double[5];
-				for(int i=0;i<marks.length;i++) {
-					System.out.println("Enter Marks of "+(i+1)+" Sub: ");
+				for(int j=0;j<marks.length;j++) {
+					System.out.println("Enter Marks of "+(j+1)+" Sub: ");
 					double mark=sc.nextDouble();
-					marks[i]=mark;
+					marks[j]=mark;
 				}
 				
 				s1.setMarks(marks);
@@ -61,7 +61,7 @@ public class App {
 	
 	public static void deletStudent(LinkedList<Student>list , int studentId ) {
 		
-		Student s1 = searchStudent(LinkedList<Student>list , int studentId);
+		Student s1 = searchStudent(list ,studentId);
 		
 		list.remove(s1);
 		
@@ -74,9 +74,9 @@ public class App {
 		for(int i=0;i<list.size();i++) {
 			Student s1 = list.get(i);
 			double marks[]=s1.getMarks();
-			int sum;
-			for(int i=0;i<marks.length;i++) {
-				sum+=marks[i];
+			int sum = 0;
+			for(int j=0;j<marks.length;j++) {
+				sum+=marks[j];
 			}
 			if(mark<sum) {
 				mark=sum;

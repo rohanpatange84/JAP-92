@@ -46,6 +46,13 @@ public class Example04 {
 		for(int i=0;i<list.size();i++) {
 			System.out.println(list.get(i));
 		}
+
+		int num=10;
+
+		new Integer(num);
+
+		System.out.println(num);
+
 		
 		
 	}
