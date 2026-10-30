@@ -12,17 +12,17 @@ public class Account{
 		// TODO Auto-generated constructor stub
 	}
 
-	public Account(String customerName, long accountNumber, double balance) {
+	public Account(String customerName,  double balance) {
 		super();
 		this.customerName = customerName;
-		this.accountNumber = accountNumber;
+		this.accountNumber = accountNumber+1;
 		this.balance = balance;
 	}
 	
-	public Account(String customerName, long accountNumber, double balance ,String branch) {
+	public Account(String customerName,  double balance ,String branch) {
 		super();
 		this.customerName = customerName;
-		this.accountNumber = accountNumber;
+		this.accountNumber = accountNumber+1;
 		this.balance = balance;
 	}
 
