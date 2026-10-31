@@ -45,7 +45,7 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", marks=" + marks + "]";
+		return String.format("%-5d %-10s %-5f",id,name,marks);
 	}
 
 	@Override
