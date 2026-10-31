@@ -69,6 +69,29 @@ public class App {
 		}
 		
 	}
+	
+	public static void updateStudent(HashSet<Student> list,int id) {
+		for (Student st : list) {
+			if (st.getId() == id) {
+					
+				System.out.println("Enter new id: ");
+				int id1 = sc.nextInt();
+				st.setId(id1);
+				 sc.nextLine();
+				System.out.println("Enter new Name: ");
+				String name = sc.nextLine();
+				st.setName(name);
+				System.out.println("Enter new Marks: ");
+				double marks =sc.nextDouble();
+				st.setMarks(marks);
+					
+				
+				break;
+
+			}
+		}
+		
+	}
 
 	public static void main(String[] args) {
 		Student s1 = new Student(14, "Rohan", 89);
@@ -92,8 +115,9 @@ public class App {
 			System.out.println("Enter 1-----Add Student");
 			System.out.println("Enter 2-----Remove Student");
 			System.out.println("Enter 3-----Search Student");
-			System.out.println("Enter 4-----Display Student");
-			System.out.println("Enter 5-----");
+			System.out.println("Enter 4-----Update Student");
+			System.out.println("Enter 5-----Display Student");
+			System.out.println("Enter 6-----");
 
 			int n = sc.nextInt();
 
@@ -115,15 +139,23 @@ public class App {
 				searchStudent(list,id2);
 				break;
 
-			case 4:
+			case 5:
 				displayStudent(list);
 				break;
 				
-			case 5:
+			case 4:
+				System.out.println("Enter id: ");
+				int id3 = sc.nextInt();
+				updateStudent(list,id3);
+				break;
+			
+				
+			case 6:
 				light=false;
 				break;
 				
 			default:
+				System.out.println("Invalid Input.....!");
 				break;
 
 			}
