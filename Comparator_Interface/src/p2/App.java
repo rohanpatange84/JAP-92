@@ -1,6 +1,9 @@
 package p2;
 
 import p1.Book;
+import p1.BookNameComparator;
+import java.util.Comparator;
+
 import java.util.TreeSet;
 public class App {
 		public static void main(String[] args) {
@@ -25,5 +28,47 @@ public class App {
 			for(Book book:list) {
 				System.out.println(book);
 			}
+			
+			
+			BookNameComparator byName = new BookNameComparator();
+			
+			TreeSet<Book> list2 = new TreeSet<>(byName);
+			
+			list2.add(b1);
+			list2.add(b2);
+			list2.add(b3);
+			list2.add(b4);
+			list2.add(b5);
+			
+			
+			System.out.println("------------------------------------------");
+			for(Book book:list2) {
+				System.out.println(book);
+			}
+			
+			
+			Comparator<Book> byAuthor = new Comparator<Book>() {
+				
+				@Override
+				public int compare(Book b1,Book b2) {
+					return b1.getAuthor().compareTo(b2.getAuthor());
+				}
+				
+			};
+			
+			TreeSet<Book> list3 = new TreeSet<>(byAuthor);
+			list3.add(b1);
+			list3.add(b2);
+			list3.add(b3);
+			list3.add(b4);
+			list3.add(b5);
+			
+			System.out.println("-------------------------------------------------------");
+			
+			for(Book book:list3) {
+				System.out.println(book);
+			}
+			
+			
 		}
 }	
