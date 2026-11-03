@@ -70,5 +70,32 @@ public class App {
 			}
 			
 			
+			Comparator<Book> byPrice = new Comparator<Book>() {
+				
+				@Override
+				public int compare(Book b1,Book b2) {
+					Integer  i1 = (int) b1.getPrice();
+					Integer i2 =(int) b2.getPrice();
+					
+					return i1.compareTo(i2);
+				}
+			};
+			
+			TreeSet<Book> list4 = new TreeSet<Book>(byPrice);
+			
+			list4.add(b1);
+			list4.add(b2);
+			list4.add(b3);
+			list4.add(b3);
+			list4.add(b5);
+			
+			System.out.println("------------------------------------------");
+			for(Book book:list4) {
+				System.out.println(book);
+			}
+			
+			
+			
+			
 		}
 }	
