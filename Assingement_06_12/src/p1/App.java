@@ -1,9 +1,24 @@
 package p1;
 
-
+import java.util.Set;
 import java.util.HashSet;
 import java.util.HashMap;
 public class App {
+	
+	
+	public static void getDepartmentDetails(HashSet department,HashSet<HashMap<String, String>> depart) {
+		HashSet<HashMap<String, String>>res= new HashSet<>();
+		
+		for(HashSet s :department) {
+			
+		
+				
+				
+				
+			}
+		}
+	}
+	
 		public static void main(String[] args) {
 			HashSet<HashMap<String, String>>Acting= new HashSet<>();
 			HashSet<HashMap<String, String>>Dance= new HashSet<>();
@@ -26,6 +41,15 @@ public class App {
 			Fitness.add(hm3);
 			
 			System.out.println(Acting);
+			
+			HashSet department= new HashSet<>();
+			department.addAll(Acting);
+			department.addAll(Dance);
+			department.addAll(Fitness);
+			
+			
+			
+			
 			
 		}
 }
