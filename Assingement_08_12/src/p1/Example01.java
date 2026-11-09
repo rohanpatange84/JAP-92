@@ -3,7 +3,7 @@ package p1;
 
 import java.util.HashMap;
 
-public class App {
+public class Example01 {
 	
 	public static boolean isPangram(String str) {
 		
